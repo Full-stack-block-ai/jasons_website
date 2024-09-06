@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1440px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* .logo-container */
+.logo-container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: rgb(10, 40, 40);
+}
+
+/* .logo inside .logo-container */
+.logo {
+    display: flex;
+    background-color: rgb(82, 80, 80);
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 50px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .logo-text inside .logo-container */
+.logo-text {
+    flex: 1;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+}
+
+/* ul inside nav */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+/* li inside ul */
+nav ul li {
+    display: inline-block;
+}
+
+/* a inside li */
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(45, 43, 43);
+}
+
+/* hamburger menu */
+.hamburger-menu{
+    display: none;
+    color: black;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 760px){
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+        
+    }
+
+    .hamburger-menu{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+}
+
