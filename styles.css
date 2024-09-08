@@ -8,6 +8,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    /* background-color: rgba(17, 14, 14, 0.2); */
 }
 
 header {
@@ -19,6 +20,8 @@ header {
     max-width: 1440px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* .logo-container */
 .logo-container {
@@ -91,7 +94,7 @@ nav a:hover {
     display: flex;
     max-width: 1440px;
     margin: auto;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .hero-text {
@@ -153,6 +156,7 @@ nav a:hover {
 .services {
     max-width: 1440px;
     margin: auto;
+    padding: 30px;
 
 }
 
@@ -208,6 +212,101 @@ nav a:hover {
 
 }
 
+/* Work profile */
+.work-profile {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.work-text {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.jobs img {
+    width: 100%;
+    position: absolute;;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: ease 3s all;
+}
+
+.jobs {
+    display: flex;
+    padding: 30px;
+    margin: 20px 30px;
+    justify-content: space-between;
+    
+}
+
+.jobs h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+article div {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+article {
+    background-color: rgba(225, 247, 27, 0.219);
+    padding: 40px;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+figure {
+    padding-top: 56%;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease 0.3s all;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    visibility: visible;
+}
+
+figure:hover img {
+    transform: scale(2);
+}
+
+/* footer  */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+
+
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
@@ -238,6 +337,12 @@ nav a:hover {
     .services-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .jobs {
+        flex-direction: column;
+        align-items: center;
+
     }
 }
 
@@ -281,6 +386,10 @@ nav a:hover {
     }
 
     .hero-text span {
+        display: none;
+    }
+
+    .right-column span {
         display: none;
     }
 
