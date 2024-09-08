@@ -149,9 +149,63 @@ nav a:hover {
     width: 50px;
 }
 
+/* services section */
+.services {
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+.services h2 {
+    font-weight: 900;
+    padding: 30px;
+    font-size: 64px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    background-color: rgba(0, 139,139, 0.5);
+    padding: 30px;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.left-column {
+    padding: 0 30px;
+}
+
+.left-column h3 {
+    padding: 30px;
+    text-align: center;
+}
+
 .left-column img {
     width: 350px;
     height: 150px;
+    border-radius: 20px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.right-column h3 {
+    font-size: 48px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.right-column p{
+    font-size: 32px;
+    padding: 30px 0;
+
 }
 
 @media (max-width: 1024px) {
@@ -169,7 +223,22 @@ nav a:hover {
         font-size: 48px;
     }
 
-    
+    .services h2 {
+        font-size: 48px;
+    }
+
+    .right-column h3 {
+        font-size: 32px;
+    }
+
+    .right-column p{
+        font-size: 24px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 760px){
