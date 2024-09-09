@@ -18,9 +18,9 @@
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
             <a href="#" class="hamburger-menu" onclick="openHamburgerMenu()">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="hero">
             <div class="hero-text">
                 <h1>Jason Willis</h1>
                 <p>
@@ -40,34 +40,41 @@
                 Focused on customer satisfaction, </span>Willis ensures your property looks its best.
                 </p>
                 <div class="call-to-action">
-                    <a href="#" class="button">Contact Me</a>
+                    <a href="mailto:https://www.willis.windowcleaning1@gmail.com" class="button">Contact Me</a>
+                    <a id="number" href="tel:+447494131423">07494 131423</a>
                 </div>
                 <div class="social-links">
-                    <a href="#">
+                    <a href="https://www.facebook.com/williswindowcleanin/" target="_blank">
                         <img src="images/fbook_icon.png" alt="facebook logo">
                     </a>
-                    <a href="#">
-                        <img src="images/linkedin_icon.png" alt="linked in logo">
-                    </a>
-                    <a href="">
+                    <a href="mailto:https://www.willis.windowcleaning1@gmail.com" target="_blank">
                         <img src="images/email_icon.png" alt="email logo">
                     </a>
                 </div>
             </div>
             <div class="hero-img">
-                <img src="images/hero-pic.webp" alt="">
+                <img src="images/hero-img.jpg" alt="">
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h2>What services do I offer</h2>
             <div class="services-container">
                 <div class="left-column">
                     <h3>Window Wash</h3>
-                    <img src="images/window_before_after.webp" alt="windows before and after">
+                    <div class="window-container">
+                        <img src="images/window-before.jpg" alt="windows before">
+                        <img src="images/window_after.jpg" alt="windows after">
+                    </div>
                     <h3>Gutter Clean</h3>
-                    <img src="images/gutter_before_after.webp" alt="gutter before and after">
+                    <div class="gutter-container">
+                        <img src="images/gutter_before.jpg" alt="windows before">
+                        <img src="images/gutter_after.jpg" alt="windows after">
+                    </div>
                     <h3>Tile Repair</h3>
-                    <img src="images/tiles_before_after.webp" alt="tiles before and after">
+                    <div class="tile-container">
+                        <img src="images/tile_before.jpg" alt="windows before">
+                        <img src="images/tile_after.jpg" alt="windows after">
+                    </div>
                 </div>
                 <div class="right-column">
                     <h3>About me</h3>
@@ -75,54 +82,33 @@
                 </div>
             </div>
         </section>
-        <section class="work-profile">
-            <div class="work-text">
-                <small>Recent Work</small>
+        <section id="portfolio" class="bento container">
+			<div class="work-text">
+                <small>Latest Projects</small>
                 <h2>
-                    Work Experience
+                    Portfolio of Completed Work
                 </h2>
             </div>
-            <div class="jobs">
-                <article>
-                    <figure>
-                        <div>
-                            <img src="images/happy_customer.webp" alt="work1" >
-                            <figcaption>
-                                work1
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <h3>Window Cleaning</h3>
-                    <div>2022-2024</div>
-                    <p>example</p>
-                </article>
-                <article>
-                    <figure>
-                        <div>
-                            <img src="images/fix_roof_tile.webp" alt="work2" >
-                            <figcaption>
-                                work2
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <h3>Gutter Cleaning</h3>
-                    <div>2022-2024</div>
-                    <p>example</p>
-                </article>
-                <article>
-                    <figure>
-                        <div>
-                            <img src="images/window_inside.webp" alt="work3" >
-                            <figcaption>
-                                work3
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <h3>Roof Repair</h3>
-                    <div>2022-2024</div>
-                    <p>example</p>
-                </article>
-            </div>
+			<div class="bento-grid">
+                <div class="bento-item">
+                    <img src="./images/bento_1.jpg" alt="conservetory" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_2.jpg" alt="window" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_3.jpg" alt="solar panels" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_4.jpg" alt="roof tile repair" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_5.jpg" alt="conservetory" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_6.jpg" alt="solar panels" width="100%" />
+                </div>
+            </div>            
         </section>
     </main>
     <footer>
